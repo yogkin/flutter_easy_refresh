@@ -19,9 +19,7 @@ class _PagingPageState extends State<PagingPage> {
         title: Text('Paging example'.tr),
       ),
       body: CustomPaging(
-        itemBuilder: <ItemType>(context, index, item) {
-          return const SkeletonItem();
-        },
+
       ),
     );
   }
@@ -30,24 +28,6 @@ class _PagingPageState extends State<PagingPage> {
 class CustomPaging extends EasyPaging<List<String>, String> {
   const CustomPaging({
     Key? key,
-    super.callLoadOverOffset,
-    super.callRefreshOverOffset,
-    super.clipBehavior,
-    super.controller,
-    super.fit,
-    super.frictionFactor,
-    super.noMoreLoad,
-    super.noMoreRefresh,
-    super.notLoadFooter,
-    super.notRefreshHeader,
-    super.refreshOnStart = true,
-    super.resetAfterRefresh,
-    super.simultaneously,
-    super.spring,
-    super.useDefaultPhysics,
-    super.itemBuilder,
-    super.refreshOnStartWidgetBuilder,
-    super.emptyWidgetBuilder,
   }) : super(key: key);
 
   @override

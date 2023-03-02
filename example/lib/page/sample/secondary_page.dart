@@ -143,7 +143,7 @@ class _SecondaryPageState extends State<SecondaryPage> {
                       duration: const Duration(milliseconds: 200),
                       child: Text(
                         'Open the second floor'.tr,
-                        style: themeData.textTheme.titleMedium,
+                        style: themeData.textTheme.bodyText1,
                       ),
                     ),
                   ),

@@ -97,7 +97,7 @@ class _CarouselPageState extends State<CarouselPage> {
                     for (int i = 0; i < _carouselCount; i++)
                       Card(
                         elevation: 0,
-                        color: themeData.colorScheme.surfaceVariant,
+                        color: themeData.colorScheme.onPrimary,
                         child: Center(
                           child: Text((i + 1).toString()),
                         ),

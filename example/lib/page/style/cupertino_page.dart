@@ -42,7 +42,7 @@ class _CupertinoIndicatorPageState extends State<CupertinoIndicatorPage> {
                 middle: Text(
                   'iOS Cupertino',
                   style: TextStyle(
-                    color: themeData.textTheme.titleMedium?.color,
+                    color: Theme.of(context).colorScheme.background,
                   ),
                 ),
                 trailing: IconButton(
@@ -99,7 +99,7 @@ class _CupertinoIndicatorPageState extends State<CupertinoIndicatorPage> {
                   largeTitle: Text(
                     'iOS Cupertino',
                     style: TextStyle(
-                      color: themeData.textTheme.titleMedium?.color,
+                      color: Theme.of(context).colorScheme.background,
                     ),
                   ),
                   trailing: IconButton(

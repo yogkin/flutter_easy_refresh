@@ -108,7 +108,7 @@ class TabBarViewPageState extends State<TabBarViewPage>
                         'TabBarView',
                         style: TextStyle(
                             color:
-                                Theme.of(context).textTheme.titleLarge?.color),
+                                Theme.of(context).textTheme.bodyText1?.color),
                       ),
                       centerTitle: false,
                     ),

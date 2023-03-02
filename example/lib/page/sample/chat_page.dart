@@ -78,7 +78,7 @@ class _ChatPageState extends State<ChatPage> {
     });
     _inputController.clear();
     Future(() {
-      PrimaryScrollController.of(context).jumpTo(0);
+      PrimaryScrollController.of(context)?.jumpTo(0);
     });
   }
 
@@ -98,7 +98,7 @@ class _ChatPageState extends State<ChatPage> {
               return Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: themeData.colorScheme.tertiaryContainer,
+                  color: themeData.colorScheme.onPrimary,
                   borderRadius: const BorderRadius.all(Radius.circular(8)),
                 ),
                 constraints: BoxConstraints(
@@ -114,8 +114,8 @@ class _ChatPageState extends State<ChatPage> {
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: message.own
-                  ? themeData.colorScheme.primaryContainer
-                  : themeData.colorScheme.tertiaryContainer,
+                  ? themeData.colorScheme.onPrimary
+                  : themeData.colorScheme.onPrimary,
               borderRadius: BorderRadius.only(
                 topLeft: const Radius.circular(24),
                 topRight: const Radius.circular(24),
@@ -279,7 +279,7 @@ class _ChatPageState extends State<ChatPage> {
               ),
             ),
             Container(
-              color: themeData.colorScheme.onInverseSurface,
+              color: themeData.colorScheme.onPrimary,
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
@@ -311,8 +311,8 @@ class _ChatPageState extends State<ChatPage> {
                               borderSide: BorderSide.none,
                             ),
                             filled: true,
-                            fillColor: themeData.colorScheme.surfaceVariant,
-                            prefixIcon: const Icon(Icons.abc),
+                            fillColor: themeData.colorScheme.onPrimary,
+                            prefixIcon: const Icon(Icons.access_time_filled_outlined),
                             suffixIcon: IconButton(
                               onPressed: () {
                                 if (_inputController.text.isNotEmpty) {

@@ -113,7 +113,7 @@ class _CryptocurrencyPageState extends State<CryptocurrencyPage>
             elevation: 0,
             clipBehavior: Clip.hardEdge,
             margin: const EdgeInsets.only(left: 32, right: 32, bottom: 32),
-            color: themeData.colorScheme.surfaceVariant,
+            color: themeData.colorScheme.onPrimary,
             child: InkWell(
               onTap: () {
                 Clipboard.setData(ClipboardData(text: info.address));
@@ -150,7 +150,7 @@ class _CryptocurrencyPageState extends State<CryptocurrencyPage>
       controller: _tabController,
       indicatorColor: themeData.colorScheme.primary,
       labelColor: themeData.colorScheme.primary,
-      unselectedLabelColor: themeData.colorScheme.tertiary,
+      unselectedLabelColor: themeData.colorScheme.onPrimary,
       indicatorSize: TabBarIndicatorSize.label,
       tabs: [
         for (final info in _infos)

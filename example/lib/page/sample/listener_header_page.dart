@@ -75,7 +75,7 @@ class _ListenerHeaderPageState extends State<ListenerHeaderPage> {
                 title: Text(
                   'Listener'.tr,
                   style: TextStyle(
-                      color: Theme.of(context).textTheme.titleLarge?.color),
+                      color: Theme.of(context).textTheme.bodyText1?.color),
                 ),
               ),
               actions: [

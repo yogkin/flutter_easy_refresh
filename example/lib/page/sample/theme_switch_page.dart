@@ -111,7 +111,7 @@ class _ThemeSwitchPageState extends State<ThemeSwitchPage>
         child: Stack(
           children: [
             Container(
-              color: themeData.colorScheme.inverseSurface,
+              color: themeData.colorScheme.onPrimary,
               width: double.infinity,
               height: state.offset,
               child: Stack(
@@ -125,7 +125,7 @@ class _ThemeSwitchPageState extends State<ThemeSwitchPage>
                       children: [
                         Obx(() {
                           final textStyle =
-                              themeData.textTheme.titleMedium!.copyWith(
+                              themeData.textTheme.bodyText1!.copyWith(
                             color: themeData.colorScheme.onPrimary,
                           );
                           final TextPainter textPainter = TextPainter(
@@ -232,7 +232,7 @@ class _ThemeSwitchPageState extends State<ThemeSwitchPage>
                               width: _pointerWidth,
                               height: _pointerHeight,
                               decoration: BoxDecoration(
-                                  color: themeData.colorScheme.onInverseSurface,
+                                  color: themeData.colorScheme.onPrimary,
                                   borderRadius: BorderRadius.vertical(
                                       top: Radius.circular(_pointerWidth / 2))),
                             ),
@@ -330,7 +330,7 @@ class _ThemeSwitchPageState extends State<ThemeSwitchPage>
                             width: double.infinity,
                             child: Text(
                               'Theme switch describe'.tr,
-                              style: themeData.textTheme.bodyLarge?.copyWith(
+                              style: themeData.textTheme.bodyText1?.copyWith(
                                 color: themeData.colorScheme.onPrimary,
                                 height: 1.8,
                               ),

@@ -103,7 +103,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
               child: Card(
                 elevation: 0,
                 margin: const EdgeInsets.only(top: 16, left: 16, right: 16),
-                color: themeData.colorScheme.primaryContainer,
+                color: themeData.colorScheme.onPrimary,
                 clipBehavior: Clip.antiAlias,
                 child: Column(
                   children: [
@@ -134,7 +134,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
               child: Card(
                 elevation: 0,
                 margin: const EdgeInsets.only(top: 16, left: 16, right: 16),
-                color: themeData.colorScheme.secondaryContainer,
+                color: themeData.colorScheme.onPrimary,
                 clipBehavior: Clip.antiAlias,
                 child: Column(
                   children: [
@@ -161,7 +161,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
               child: Card(
                 elevation: 0,
                 margin: const EdgeInsets.only(top: 16, left: 16, right: 16),
-                color: themeData.colorScheme.tertiaryContainer,
+                color: themeData.colorScheme.onPrimary,
                 clipBehavior: Clip.antiAlias,
                 child: Column(
                   children: [

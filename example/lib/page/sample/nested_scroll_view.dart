@@ -52,7 +52,7 @@ class NestedScrollViewPageState extends State<NestedScrollViewPage>
                 title: Text(
                   'NestedScrollView',
                   style: TextStyle(
-                      color: Theme.of(context).textTheme.titleLarge?.color),
+                      color: Theme.of(context).textTheme.bodyText1?.color),
                 ),
                 centerTitle: false,
               ),

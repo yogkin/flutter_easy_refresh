@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
           failedText: 'Failed'.tr,
           messageText: 'Last updated at %T'.tr,
         );
-    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance!.addObserver(this);
     super.initState();
   }
 
@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   Widget _buildFrame(Widget app) {
     return Builder(builder: (context) {
       return Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.onInverseSurface,
+        backgroundColor: Theme.of(context).colorScheme.onPrimary,
         body: _mobileStyle
             ? Center(
                 child: Card(

@@ -23,7 +23,7 @@ class _StylePageState extends State<StylePage> {
               title: Text(
                 'Style'.tr,
                 style: TextStyle(
-                    color: Theme.of(context).textTheme.titleLarge?.color),
+                    color: Theme.of(context).colorScheme.background),
               ),
               centerTitle: false,
             ),
@@ -45,7 +45,7 @@ class _StylePageState extends State<StylePage> {
               ListItem(
                 title: 'Cupertino',
                 subtitle: 'iOS Cupertino',
-                icon: Icons.apple,
+                icon: Icons.ac_unit,
                 onTap: () => Get.toNamed(Routes.cupertinoStyle),
               ),
               ListItem(
@@ -81,7 +81,7 @@ class _StylePageState extends State<StylePage> {
               ListItem(
                 title: 'Space',
                 subtitle: 'Star track'.tr,
-                icon: Icons.satellite_alt,
+                icon: Icons.access_alarm,
                 onTap: () => Get.toNamed(Routes.spaceStyle),
               ),
               ListItem(
@@ -105,7 +105,7 @@ class _StylePageState extends State<StylePage> {
               ListItem(
                 title: 'Bubbles',
                 subtitle: 'Bubbles launch'.tr,
-                icon: Icons.rocket_launch,
+                icon: Icons.access_time_filled_outlined,
                 onTap: () => Get.toNamed(Routes.bubblesStyle),
               ),
             ]),

@@ -25,7 +25,7 @@ class _MorePageState extends State<MorePage> {
               title: Text(
                 'More'.tr,
                 style: TextStyle(
-                    color: Theme.of(context).textTheme.titleLarge?.color),
+                    color: Theme.of(context).textTheme.bodyText1?.color),
               ),
               centerTitle: false,
             ),

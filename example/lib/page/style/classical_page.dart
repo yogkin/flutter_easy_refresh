@@ -57,7 +57,7 @@ class _ClassicPageState extends State<ClassicPage> {
         header: ClassicHeader(
           clamping: _headerProperties.clamping,
           backgroundColor: _headerProperties.background
-              ? Theme.of(context).colorScheme.surfaceVariant
+              ? Theme.of(context).colorScheme.background
               : null,
           mainAxisAlignment: _headerProperties.alignment,
           showMessage: _headerProperties.message,
@@ -76,7 +76,7 @@ class _ClassicPageState extends State<ClassicPage> {
         footer: ClassicFooter(
           clamping: _footerProperties.clamping,
           backgroundColor: _footerProperties.background
-              ? Theme.of(context).colorScheme.surfaceVariant
+              ? Theme.of(context).colorScheme.background
               : null,
           mainAxisAlignment: _footerProperties.alignment,
           showMessage: _footerProperties.message,

@@ -30,7 +30,7 @@ class _SupportMePageState extends State<SupportMePage> {
               title: Text(
                 'Support me'.tr,
                 style: TextStyle(
-                    color: Theme.of(context).textTheme.titleLarge?.color),
+                    color: Theme.of(context).textTheme.bodyText1?.color),
               ),
               centerTitle: false,
             ),
@@ -89,7 +89,7 @@ class _SupportMePageState extends State<SupportMePage> {
               ListItem(
                 title: 'Cryptocurrency'.tr,
                 subtitle: 'Cryptocurrency donation'.tr,
-                icon: Icons.currency_bitcoin,
+                icon: Icons.ac_unit_rounded,
                 onTap: () => Get.toNamed(Routes.cryptocurrency),
               ),
             ]),

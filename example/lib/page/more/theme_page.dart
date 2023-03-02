@@ -32,8 +32,6 @@ class ThemeModel {
   }) {
     return ThemeData(
       brightness: brightness,
-      useMaterial3: true,
-      colorSchemeSeed: colorSchemeSeed,
     );
   }
 
